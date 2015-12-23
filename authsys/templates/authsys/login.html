@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Добро пожаловать</h1>
+					<h2 class="subtitle">Войдите в систему</h2>
+  					<form action={%url 'login'%} method="post" class="form-inline signup" role="form">
+              {% csrf_token %}
+  					  <div class="form-group">
+  					    <input autofocus name='username' type="text" class="form-control" id="exampleInputEmail1" placeholder="имя пользователя">
+  					    <p> </p> 
+  					    <input type="password" name='password' class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+  					  </div>
+              {% if login_error %}
+                <br>
+                <label class = "class-error1"> {{login_error}} </label>
+              {%endif%}
+              <p> </p> 
+  					  <button name="sign_in" type="submit" class="btn btn-theme">ВОЙТИ</button>
+  					</form>					
+				</div>
+				
+				
+			</div>
+
+
+	
+
+{% endblock %}/

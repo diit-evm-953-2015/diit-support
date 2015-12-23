@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+  <div class="row">
+    <div class="col-md-1 ">
+
+
+    </div>
+    <div class="col-md-6">
+      <a href="/profile/{{id}}"><h4 class="username1">{{full_name}}</h4></a>
+      <h5>
+        Факультет : {{faculty}}
+      </h5>
+      <h5>
+        Кафедра : {{department}}
+      </h5>
+      <div class="avatar">
+        <h1><img class ="myphoto" src="{{ avatar.url }}"></h1>
+
+      </div> <!--avatar-->
+   
+    {% if user.id != id and user.username%}
+      <form action='/messages/send_message_onpage/{{id}}/' method="post" >
+        {% csrf_token %}
+        <h4>Личное сообщение:</h4>
+        <textarea name='message' class="form-control message-form" placeholder="Начните писать сообщение..."rows="4"></textarea> 
+        {% if login_error %}
+          <br>
+          <label class = "class-error1"> {{login_error}} </label>
+        {%endif%}
+        <p> </p> 
+        <button name="submit" type="submit" class="btn btn-theme">Отправить</button>
+      </form> 
+    {% endif %}
+  
+ </div>
+
+    <div class="col-md-5 ">
+  
+
+    </div>
+</div>
+
+
+{% endblock %}

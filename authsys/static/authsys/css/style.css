@@ -1,0 +1,330 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+                *, *:before, *:after{
+                  -webkit-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  box-sizing: border-box;
+                  padding: 0;
+                  margin: 0;
+                  font-family: 'Lato', sans-serif;
+                }
+
+                /*| Navigation |*/ 
+
+                nav{
+                  position: absolute;
+                  top: 50px;
+                  left: 0;
+                  width: 100%;
+                  background: #fd680e;
+                  box-shadow: 0 3px 10px -2px rgba(0,0,0,.9);
+                  border: 1px solid rgba(0,0,0,.1);
+                  z-index: 1000;
+                }
+
+                            nav:hover {
+                              background-color: #fd6000; }
+
+                  nav ul{
+                    list-style: none;
+                    position: relative;
+                    float: right;
+                    margin-right: 0%;
+                    display: inline-table;
+                  }
+                    nav ul li{
+                      float: left;
+                      -webkit-transition: all .2s ease-in-out;
+                      -moz-transition: all .2s ease-in-out;
+                      transition: all .2s ease-in-out;
+                    }
+
+                    nav ul li:hover{background: rgba(0,0,0,.15);}
+                    nav ul li:hover > ul{display: block;}
+                    nav ul li{
+                      float: left;
+                      -webkit-transition: all .2s ease-in-out;
+                      -moz-transition: all .2s ease-in-out;
+                      transition: all .2s ease-in-out;
+                    }
+                      nav ul li a{
+                        display: block; 
+                        padding: 5px 30px;
+                        color: black; 
+                        font-size: .9em;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        width: 100%;
+                        opacity: 1;
+                      }
+                      nav ul ul{
+                        display: none;
+                        background: #fff;
+                        position: absolute; 
+                        top: 100%;
+                        box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+                        border: 1px solid rgba(0,0,0,.1);
+                      }
+                        nav ul ul li{float: none; position: relative;}
+                          nav ul ul li a {
+                            padding: 15px 30px; 
+                            border-bottom: 1px solid rgba(0,0,0,.05);
+                          }
+                          nav ul ul ul {
+                            position: absolute; 
+                            left: 100%; 
+                            top:0;
+                          } 
+
+
+
+
+/* ==== Google font ==== */
+@import url('http://fonts.googleapis.com/css?family=Lato:400,300,700,900');
+
+body {
+  background-color: #f2f2f2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 3px 1px 5px black, 0 0 1em white;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h3 {
+	font-weight: 400;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+    text-shadow: 3px 1px 5px black, 0 0 1em white;
+}
+
+
+a {
+    color: #d6ee18;
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: black;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #c6d550;
+}
+
+.alignleft {
+    text-align: left;
+}
+.alignright {
+    text-align: right;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.btn-theme  {
+  color: #fff;
+  background-color: #fd680e;
+  border-color: #fd680e;
+}
+.btn-theme:hover  {
+  color: #fff;
+  background-color: #444;
+  border-color: #444;
+}
+
+
+form.signup {
+	margin-top: 30px;
+}
+form.signup button.btn {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+form.signup input.form-control:focus {
+	border-color: #fd680e;
+}
+
+
+/* Nav */
+
+a.navbar-brand {
+	color: #fff !important;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+a.navbar-brand:hover {
+    color: #ddd !important;
+}
+
+/* Header */
+
+#header {	
+	background-color: #444;
+	background: url(../img/main-bg.jpg) no-repeat center top;
+	margin-top: -20px;
+	padding-top: 90px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 900px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+table label{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+
+}
+
+.class-error1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color:#F94848;
+  font-size: 15;
+
+}
+
+.form_marg{
+  margin-top: 10px;
+  margin-bottom: 12px;
+  margin-left: 20px;
+}
+.btn-marg{
+  margin-top: 35px;
+  margin-right: 23px;
+  margin-left: 6px;
+}
+.pr_message_form{
+  margin-top: 25px;
+  margin-bottom: 5px;
+  
+
+}
+
+#header h1 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 45px;
+	font-weight: 900;
+	letter-spacing: -1px;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+h2.subtitle {
+	color: #fff;
+	font-size: 20px;
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+}
+
+
+
+/* footer */
+#footer {
+	background: #fd680e;
+	padding: 10px 0 10px;
+}
+
+.copyright {
+	color: #fff;
+	text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}	
+
+.block-info{
+ min-width: 300px;
+ float: left;
+ display: inline-block; 
+}
+.profile_block{
+  display: block;
+  min-height:350px;
+  float: none;
+}
+.block_btns{
+  position: relative;
+  height: 200px;
+  width:200px;
+  margin-top: 100px;
+  margin-left: 50px;
+  float: left;
+}
+.myphoto {
+  border-radius: 100px; /* Радиус скругления */
+  box-shadow: 0 0 0 3px gray;, 0 0 13px #333; /* Параметры теней */
+  min-width:200px; 
+  min-height:200px;
+  max-width: 300px; 
+  max-height:220px;
+}
+
+
+
+
+.block-mess {
+  min-height: 30px;
+  padding-bottom: 4px;
+   text-align: left;
+  background-color: white;
+  margin: 0 auto;
+  opacity: .9; 
+}

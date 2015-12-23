@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load staticfiles %}
+
+
+{% block content %}
+
+  <div class="row">
+    <div class="col-md-1 ">
+
+
+    </div>
+    <div class="col-md-10">
+      {% for user in user_list %}
+        <div class="profile_block">
+          <div class='block-info'>
+            <a href="/profile/{{user.id}}"><h4 class="username1">{{user.get_full_name}}</h4></a>
+            <h5>Факультет : {{user.faculty}} </h5>
+            <h5>Кафедра : {{user.department}} </h5>  
+            <img class ="myphoto" src="{{ user.avatar.url }}">
+          </div>  
+          {% if not user.username %}
+            <div class='block_btns'>
+                <a href="/messages/send_message_onpage/{{user.id}}/"><button class="btn btn-theme" >написать сообщение</button></a>
+            </div>
+          {%endif%}
+        </div>
+      {% endfor %}
+    </div>
+
+
+
+{% endblock %}/

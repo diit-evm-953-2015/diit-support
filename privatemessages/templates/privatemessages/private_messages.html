@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load pluralize %}
+<div class="private_messages">
+      <div class="row">
+    <div class="col-md-1 ">
+
+
+    </div>
+    <div class="col-md-3">
+      <h3>Собеседники</h3>
+    <div class="partners">
+    {% for thread in threads %}
+        <p><a href="{% url 'privatemessages.views.chat_view' thread.id %}">{{ thread.partner.get_full_name }} <br>({{ thread.total_messages|default_if_none:"0" }} {{ thread.total_messages|rupluralize:"сообщение,сообщения,сообщений" }})</a></p>
+    {% empty %}
+        <p>Пока что собеседников нет.</p>
+    {% endfor %}
+    </div>
+  
+ </div>
+
+    <div class="col-md-6 ">
+        <h3>Отправить сообщение</h3>
+        <form action="{% url 'privatemessages.views.send_message_view' %}" method="post" >
+        {% csrf_token %}
+            <select name="recipient_name" class="form-control">
+                {% for user in user_list %}
+                    {% if user.id != user_req_id%}
+                        <option value={{user.username}}>{{user.get_full_name}}</option>
+                    {%endif%}
+                {% endfor %}
+            </select>
+        
+        <p><textarea class="form-control pr_message_form row3" name="message" placeholder="Сообщение" rows="5"></textarea></p>
+        <p><input type="submit" class="btn btn-theme" value="Отправить"></p>
+    </form>
+</div>
+
+    </div>
+</div>
+
+
+
+    
+
+{% endblock content %}

@@ -1,0 +1,122 @@
+Структура проекта:
+
+diit-support
+├── authsys
+│   ├── admin.py
+│   ├── forms.py
+│   ├── __init__.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── 0001_initial.pyc
+│   │   ├── 0002_auto_20151221_1039.py
+│   │   ├── 0003_auto_20151221_1556.py
+│   │   ├── __init__.py
+│   ├── models.py
+│   ├── reg_user_info.html
+│   ├── static
+│   │   └── authsys
+│   │       ├── css
+│   │       │   ├── bootstrap.css
+│   │       │   ├── bootstrap-theme.css
+│   │       │   ├── bootstrap-theme-no.css
+│   │       │   └── style.css
+│   │       ├── fonts
+│   │       │   ├── glyphicons-halflings-regular.eot
+│   │       │   ├── glyphicons-halflings-regular.svg
+│   │       │   ├── glyphicons-halflings-regular.ttf
+│   │       │   └── glyphicons-halflings-regular.woff
+│   │       ├── img
+│   │       │   ├── favicon.png
+│   │       │   └── main-bg.jpg
+│   │       └── js
+│   │           ├── bootstrap.min.js
+│   │           └── jquery.js
+│   ├── templates
+│   │   ├── authsys
+│   │   │   ├── about.html
+│   │   │   ├── base.html
+│   │   │   ├── login.html
+│   │   │   ├── profile.html
+│   │   │   ├── profiles.html
+│   │   │   ├── register.html
+│   │   │   ├── reg_login_pass.html
+│   │   │   ├── reg_user_info.html
+│   │   │   └── thanks.html
+│   │   └── base.html
+│   ├── tests.py
+│   ├── urls.py
+│   ├── urls.pyc
+│   ├── views.py
+│   └── views.pyc
+├── db.sqlite3
+├── dump.rdb
+├── manage.py
+├── media
+│   └── avatars
+│       ├── 1c6HzWvCyxI.jpg
+│       ├── 1.jpg
+│       ├── 72xAtV1siic.jpg
+│       ├── belyaev.jpg
+│       ├── blank-avatar.png
+│       ├── bondareva_EdjaTPh.jpg
+│       ├── bondareva.jpg
+│       ├── dzuba.jpg
+│       ├── gukovickij2.jpg
+│       ├── hmarskij.jpg
+│       ├── Kosolapov.jpg
+│       ├── mudrik.jpg
+│       ├── pahomova.jpg
+│       ├── samkov.jpg
+│       ├── shapovalov.jpg
+│       ├── TXVIt_qqmew.jpg
+│       ├── TXVIt_qqmew_naS2W9N.jpg
+│       └── TXVIt_qqmew_uLLNB3b.jpg
+├── diit-support
+│   ├── __init__.py
+│   ├── local_settings.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-34.pyc
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+├── privatemessages
+│   ├── admin.py
+│   ├── __init__.py
+│   ├── management
+│   │   ├── commands
+│   │   │   ├── __init__.py
+│   │   │   ├── __pycache__
+│   │   │   │   ├── __init__.cpython-34.pyc
+│   │   │   ├── starttornadoapp.py
+│   │   │   └── starttornadoapp.pyc
+│   │   ├── __init__.py
+│   │   └── __pycache__
+│   │       └── __init__.cpython-34.pyc
+│   ├── models.py
+│   ├── static
+│   │   └── privatemessages
+│   │       ├── css
+│   │       │   └── privatemessages.css
+│   │       └── js
+│   │           ├── jstz.min.js
+│   │           └── privatemessages.js
+│   ├── templates
+│   │   ├── base.html~
+│   │   ├── privatemessages
+│   │   │   ├── base.html
+│   │   │   ├── chat.html
+│   │   │   └── private_messages.html
+│   ├── templatetags
+│   │   ├── __init__.py
+│   │   ├── pluralize.py
+│   ├── tests.py
+│   ├── tornadoapp.py
+│   ├── urls.py
+│   ├── utils.py
+│   ├── views_copy.py
+│   ├── views.py
+└── tree_project.txt
+
